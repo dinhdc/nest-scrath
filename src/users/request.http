@@ -1,0 +1,47 @@
+### Create a new user request
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "hellomother@gmail.com",
+  "password": "123456a@"
+}
+
+
+### Create a new user request
+POST http://localhost:3000/auth/signout
+
+
+### Get my profile
+GET http://localhost:3000/auth/me
+
+
+### Login with username and password request
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "test1121312111@gmail.com",
+  "password": "test231asdasda231"
+}
+
+
+### Find a particular user with the given ID
+GET http://localhost:3000/auth/4
+
+
+### Find all users with the given email
+GET http://localhost:3000/auth?email=test@gmail.com
+
+
+### Delete a particular user with the given ID
+DELETE http://localhost:3000/auth/1
+
+
+### Update a user
+PATCH http://localhost:3000/auth/2
+content-type: application/json
+
+{
+  "email": "test1111@gmail.com"
+}

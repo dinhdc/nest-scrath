@@ -1,0 +1,16 @@
+### List all messages
+GET http://localhost:3000/messages/
+
+### Create a new message
+POST http://localhost:3000/messages/ HTTP/1.1
+content-type: application/json
+
+{
+  "content": "update content in file"
+}
+
+
+
+
+### Get a particular message
+GET http://localhost:3000/messages/10000/
